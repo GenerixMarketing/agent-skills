@@ -4,7 +4,13 @@ Changelog for agent-skills. Follows [semantic versioning](https://semver.org/) l
 
 ## Unreleased
 
-Initial scaffolding in progress. First skills coming soon.
+Next: foundational SEO skills (seo-foundations, on-page audit, technical audit).
+
+## v0.2.0 (2026-05-22)
+
+- Added `_foundation/client-context` skill: SKILL.md, intake-questions reference, and a worked example for a sample SMB client
+- Added Quick Start section to README covering install paths, the recommended first prompt, and the role of the foundation skill
+- Updated Skills Index to show `client-context` as Shipped
 
 ## v0.1.1 (2026-05-20)
 
