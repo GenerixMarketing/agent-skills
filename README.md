@@ -46,23 +46,60 @@ Skills land here as they're published. The full planned list spans ~25 skills ac
 
 | Category | Skills | Status |
 |---|---|---|
-| Foundation | client-context | Coming soon |
+| Foundation | [client-context](skills/_foundation/client-context/) | Shipped |
 | SEO | 8 skills (foundations, on-page, technical, keyword research, competitor analysis, off-page link building, content audit, local) | Coming soon |
 | AEO | 9 skills (content optimization, citation tracking, entity presence, etc.) | Coming soon |
 | Content | 5 skills (strategy, programmatic SEO, schema, etc.) | Coming soon |
 | Analytics | 2 skills (marketing analytics, SEO reporting) | Coming soon |
 
-## How to Use a Skill
+## Quick Start
 
-1. Clone the repo or copy the skill folder you want.
-2. Drop the folder into your agent's skills directory:
-   - **Claude Code:** `~/.claude/skills/`
-   - **Claude Agent SDK:** wherever your project loads skills from
-   - **Cowork mode:** install via plugin or place in your skills directory
-   - **Cursor, Windsurf, Codex:** see `AGENTS.md` for cross-agent install paths
-3. The agent loads the skill automatically when the task matches its description.
+Here is how to go from "I just found this repo" to "the agent is doing real work for me" in under five minutes.
 
-For a walkthrough of how skills work, read Anthropic's [Claude Skills documentation](https://docs.claude.com).
+### 1. Pick your agent
+
+These skills work in any agent that follows the [Agent Skills spec](https://agentskills.io). The setup path varies slightly:
+
+- **Claude Code (terminal):** install from [claude.ai/code](https://claude.ai/code), then place skills in `~/.claude/skills/`
+- **Cowork mode (Claude desktop app):** install Claude Desktop, then drop skills in your configured skills directory
+- **Cursor:** place skills in `.cursor/skills/` inside your project
+- **Windsurf:** place skills in `.windsurf/skills/` inside your project
+- **OpenAI Codex:** place skills in `.agents/skills/` inside your project
+
+### 2. Install a skill
+
+The fastest path is to clone the repo and copy the skill folder you want:
+
+```bash
+git clone https://github.com/Generix-Marketing/agent-skills.git
+cp -r agent-skills/skills/_foundation/client-context ~/.claude/skills/
+```
+
+If you only want one skill, use [degit](https://github.com/Rich-Harris/degit) to pull it without cloning the whole repo:
+
+```bash
+npx degit Generix-Marketing/agent-skills/skills/_foundation/client-context ~/.claude/skills/client-context
+```
+
+### 3. Start with the foundation skill
+
+Always install `_foundation/client-context` first. Other skills read from the `client-context.md` file it creates, so they need it in place to work properly.
+
+### 4. Run your first prompt
+
+Open your agent in a working directory for your client (a folder you will come back to). Try a prompt that matches a skill description:
+
+```
+Let's set up client context for Northwind Roofing, https://www.northwindroofing.com/
+```
+
+The agent detects that `client-context` matches your prompt, loads the skill, walks you through the intake questions, and writes `client-context.md` to your working directory. From then on, every other skill you install reads from that file as the starting point.
+
+### 5. Add more skills as you need them
+
+You do not need to install every skill at once. Add them as your work calls for them: a technical audit skill when you need to crawl a site, a keyword research skill when you are planning content, an AEO skill when you are auditing for AI citations. Each one loads automatically when your prompt matches its description.
+
+For a deeper walkthrough of how skills work, read Anthropic's [Claude Skills documentation](https://docs.claude.com). To write your own skill, jump to `CONTRIBUTING.md`.
 
 ## Contributing
 
