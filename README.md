@@ -90,7 +90,7 @@ Always install `_foundation/client-context` first. Other skills read from the `c
 Open your agent in a working directory for your client (a folder you will come back to). Try a prompt that matches a skill description:
 
 ```
-Let's set up client context for Northwind Roofing, https://www.northwindroofing.com/
+Let's set up client context for Cardinal Ridge Roofing, https://www.example.com/
 ```
 
 The agent detects that `client-context` matches your prompt, loads the skill, walks you through the intake questions, and writes `client-context.md` to your working directory. From then on, every other skill you install reads from that file as the starting point.
