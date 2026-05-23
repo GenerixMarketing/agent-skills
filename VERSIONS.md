@@ -4,7 +4,13 @@ Changelog for agent-skills. Follows [semantic versioning](https://semver.org/) l
 
 ## Unreleased
 
-Next: keyword research and competitor analysis skills.
+Next: off-page link building, content audit, and local SEO skills.
+
+## v0.4.0 (2026-05-23)
+
+- Added `seo/keyword-research` skill: tool-agnostic workflow with adapter sections for Semrush MCP, Ahrefs, GSC, Google Keyword Planner, and free fallbacks. Includes intent classification reference, scoring framework, SERP feature guide, and a worked example for the fictional Cardinal Ridge Roofing.
+- Added `seo/competitor-analysis` skill: three-tier competitor framing (direct, aspirational, shadow) with extended treatment of shadow competitors (Reddit, YouTube, AI Overviews, review sites). Includes shadow competitor playbook, content gap method reference, and a worked example.
+- Updated Skills Index to show keyword-research and competitor-analysis as Shipped.
 
 ## v0.3.0 (2026-05-23)
 
