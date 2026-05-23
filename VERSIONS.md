@@ -4,7 +4,14 @@ Changelog for agent-skills. Follows [semantic versioning](https://semver.org/) l
 
 ## Unreleased
 
-Next: foundational SEO skills (seo-foundations, on-page audit, technical audit).
+Next: keyword research and competitor analysis skills.
+
+## v0.3.0 (2026-05-23)
+
+- Added `seo/seo-foundations` skill: SKILL.md and a quotable glossary reference. Acts as the conceptual primer the rest of the SEO category builds on.
+- Added `seo/on-page-audit` skill: SKILL.md, ten-point checklist, title and meta description pattern library, and a worked audit example on a fictional service page.
+- Added `seo/technical-audit` skill: SKILL.md, crawl-setup reference (Screaming Frog and free alternatives), GSC pulls reference, dev-ticket templates for the ten most common findings, and a worked audit example on a fictional mid-size site.
+- Updated Skills Index to show the three SEO foundations as Shipped, with planned SEO skills listed separately.
 
 ## v0.2.0 (2026-05-22)
 
