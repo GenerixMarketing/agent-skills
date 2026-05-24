@@ -4,7 +4,16 @@ Changelog for agent-skills. Follows [semantic versioning](https://semver.org/) l
 
 ## Unreleased
 
-Next: off-page link building, content audit, and local SEO skills.
+Next: AEO category (answer engine optimization). Likely first skills: aeo-foundations, citation-tracking, content-for-citations.
+
+## v0.5.0 (2026-05-23)
+
+SEO category complete with this release. Eight SEO skills now shipped covering primer, on-page, technical, keyword, competitor, off-page, content portfolio, and local search.
+
+- Added `seo/off-page-link-building` skill: white-hat authority and link strategy covering digital PR, expert sourcing, local citations, partner backlinks, content-earned links, and reclamation. Explicitly refuses link schemes, PBNs, paid networks, and other tactics that risk manual actions. Includes link quality rubric, outreach templates, foundational citation source list, and a worked example.
+- Added `seo/content-audit` skill: portfolio-level inventory and prune workstream. Classifies every URL as keep, improve, consolidate, prune, or redirect. Especially valuable for sites affected by helpful content algorithm updates. Includes classification rubric, HCU recovery playbook, and a worked example.
+- Added `seo/local-seo` skill: balanced strategy across Google Business Profile (local pack play) and on-site local SEO (organic blue-link play). Includes GBP optimization checklist, reviews program playbook, local schema templates for common business types, and a worked example.
+- Updated Skills Index to mark SEO category complete with all eight skills shipped.
 
 ## v0.4.0 (2026-05-23)
 
