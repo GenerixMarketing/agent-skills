@@ -47,8 +47,7 @@ Skills land here as they're published. The full planned list spans ~25 skills ac
 | Category | Skills | Status |
 |---|---|---|
 | Foundation | [client-context](skills/_foundation/client-context/) | Shipped |
-| SEO | [seo-foundations](skills/seo/seo-foundations/), [on-page-audit](skills/seo/on-page-audit/), [technical-audit](skills/seo/technical-audit/), [keyword-research](skills/seo/keyword-research/), [competitor-analysis](skills/seo/competitor-analysis/) | Shipped |
-| SEO (planned) | off-page link building, content audit, local SEO | Coming soon |
+| SEO | [seo-foundations](skills/seo/seo-foundations/), [on-page-audit](skills/seo/on-page-audit/), [technical-audit](skills/seo/technical-audit/), [keyword-research](skills/seo/keyword-research/), [competitor-analysis](skills/seo/competitor-analysis/), [off-page-link-building](skills/seo/off-page-link-building/), [content-audit](skills/seo/content-audit/), [local-seo](skills/seo/local-seo/) | Shipped (category complete) |
 | AEO | 9 skills (content optimization, citation tracking, entity presence, etc.) | Coming soon |
 | Content | 5 skills (strategy, programmatic SEO, schema, etc.) | Coming soon |
 | Analytics | 2 skills (marketing analytics, SEO reporting) | Coming soon |
