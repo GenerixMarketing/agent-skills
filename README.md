@@ -48,9 +48,9 @@ Skills land here as they're published. The full planned list spans ~25 skills ac
 |---|---|---|
 | Foundation | [client-context](skills/_foundation/client-context/) | Shipped |
 | SEO | [seo-foundations](skills/seo/seo-foundations/), [on-page-audit](skills/seo/on-page-audit/), [technical-audit](skills/seo/technical-audit/), [keyword-research](skills/seo/keyword-research/), [competitor-analysis](skills/seo/competitor-analysis/), [off-page-link-building](skills/seo/off-page-link-building/), [content-audit](skills/seo/content-audit/), [local-seo](skills/seo/local-seo/) | Shipped (category complete) |
-| AEO | 9 skills (content optimization, citation tracking, entity presence, etc.) | Coming soon |
-| Content | 5 skills (strategy, programmatic SEO, schema, etc.) | Coming soon |
-| Analytics | 2 skills (marketing analytics, SEO reporting) | Coming soon |
+| AEO | [aeo-foundations](skills/aeo/aeo-foundations/), [ai-search-audit](skills/aeo/ai-search-audit/), [content-for-citations](skills/aeo/content-for-citations/), [citation-tracking](skills/aeo/citation-tracking/), [entity-presence](skills/aeo/entity-presence/), [schema-for-aeo](skills/aeo/schema-for-aeo/), [reddit-strategy](skills/aeo/reddit-strategy/), [ai-crawler-access](skills/aeo/ai-crawler-access/), [named-framework-development](skills/aeo/named-framework-development/) | Shipped (category complete) |
+| Content | [content-strategy](skills/content/content-strategy/), [programmatic-content](skills/content/programmatic-content/), [content-briefs](skills/content/content-briefs/), [content-refresh](skills/content/content-refresh/), [site-architecture](skills/content/site-architecture/) | Shipped (category complete) |
+| Analytics | [marketing-analytics](skills/analytics/marketing-analytics/), [search-reporting](skills/analytics/search-reporting/) | Shipped (category complete) |
 
 ## Quick Start
 
