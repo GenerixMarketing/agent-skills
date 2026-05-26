@@ -34,8 +34,7 @@ agent-skills/
     ├── seo/                 # Traditional SEO skills
     ├── aeo/                 # AI citation and answer-engine optimization
     ├── content/             # Content strategy, schema, site architecture
-    ├── analytics/           # Measurement and reporting
-    └── shared-references/   # Rule libraries and tool cheatsheets
+    └── analytics/           # Measurement and reporting
 ```
 
 Each skill lives in its own folder with a `SKILL.md` at the root. Supporting files (references, scripts, examples) sit alongside it.
