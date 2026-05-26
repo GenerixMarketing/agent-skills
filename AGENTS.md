@@ -15,9 +15,8 @@ Skills are organized by category under `skills/`:
 - `_foundation/`: Read first by every other skill. Currently holds `client-context`.
 - `seo/`: Traditional SEO skills.
 - `aeo/`: AI citation and answer-engine optimization skills.
-- `content/`: Content strategy, schema, site architecture, programmatic SEO.
+- `content/`: Content strategy, schema, site architecture, programmatic content.
 - `analytics/`: Measurement and reporting.
-- `shared-references/`: Rule libraries and tool cheatsheets that skills pull from on demand.
 
 Each skill lives at `skills/[category]/[skill-name]/SKILL.md`.
 
@@ -32,7 +31,7 @@ description: When to load this skill.
 ---
 ```
 
-When a user's request matches a skill's `description`, the agent loads that skill's `SKILL.md` and follows its instructions. Skills can reference other files (in their own `references/` folder or in `shared-references/`) and load them on demand.
+When a user's request matches a skill's `description`, the agent loads that skill's `SKILL.md` and follows its instructions. Skills can reference other files (in their own `references/` folder) and load them on demand.
 
 ## Installation Across Agents
 
