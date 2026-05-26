@@ -32,15 +32,11 @@ description: When the user wants to [specific task]. Also use when the user ment
 
 The `description` field is critical. It tells the agent when to load the skill. Be specific. Vague descriptions cause the skill to load when it shouldn't, or fail to load when it should.
 
-### Shared references vs in-skill references
+### References
 
-If a rule library is used by multiple skills, put it in `skills/shared-references/`. If it's only used by one skill, put it in that skill's local `references/` folder.
+Reference data (rule libraries, tool cheatsheets, templates) lives in each skill's local `references/` folder. Skills should `Read` references on demand, not load them upfront. This keeps token usage low.
 
-Skills should `Read` references on demand, not load them upfront. This keeps token usage low.
-
-### Tool cheatsheets
-
-External tool documentation (Ahrefs, GSC, Screaming Frog, etc.) lives in `skills/shared-references/tool-references/`. Skills reference these instead of repeating tool syntax inline.
+When a reference is genuinely useful across multiple skills, duplicate it into each skill's `references/` folder rather than creating a shared dependency. Skills should be self-contained so they can be installed and run independently.
 
 ## Writing Style
 
@@ -58,7 +54,7 @@ When editing or adding skills, follow these rules:
 2. Create the skill folder and `SKILL.md`.
 3. Write the frontmatter with a specific, trigger-friendly description.
 4. Write the skill body as a clear workflow.
-5. If the skill needs reference data, put it in `references/` (local) or `shared-references/` (cross-skill).
+5. If the skill needs reference data, put it in the skill's local `references/` folder.
 6. Add the skill to the Skills Index in `README.md`.
 7. Add a line to `VERSIONS.md` under the next version.
 
