@@ -47,17 +47,13 @@ The `description` field decides whether the agent loads your skill. Be specific.
 
 After the frontmatter, the body should be a prescriptive workflow. Tell the agent exactly what to do, in what order, with what tools.
 
-### 4. Reference shared rule libraries
+### 4. Put rules and references in the skill's local references folder
 
-If your skill needs technical rules (Core Web Vitals thresholds, schema patterns, etc.), check `skills/shared-references/` first. If a relevant library exists, reference it instead of duplicating rules in your skill.
+If your skill needs technical rules (Core Web Vitals thresholds, schema patterns, etc.), put them in your skill's local `references/` folder. Skills are self-contained; each one ships with the reference data it needs.
 
-If the rules are unique to your skill, put them in your local `references/` folder.
+### 5. Document any external tool the skill uses
 
-### 5. Reference tool cheatsheets
-
-If your skill uses an external tool (Ahrefs, GSC, Screaming Frog, GA4, etc.), check `skills/shared-references/tool-references/` for a cheatsheet. Reference it instead of teaching tool syntax inline.
-
-If your skill uses a tool that doesn't have a cheatsheet yet, write one and submit it alongside your skill.
+If your skill uses an external tool (Ahrefs, GSC, Screaming Frog, GA4, etc.), document the specific commands, settings, or methods the skill relies on in a reference file within your skill's `references/` folder. Do not assume the user has prior tool fluency.
 
 ### 6. Update the README
 
@@ -103,16 +99,6 @@ We hold contributions to these standards:
 ## Improving an Existing Skill
 
 Small improvements (clarification, new examples, bug fixes) can go straight to a PR. Larger changes (reworking the workflow, splitting a skill into multiple skills, changing the description significantly) should start with an issue so we can discuss before you do the work.
-
-## Adding a Shared Reference
-
-Shared references live in `skills/shared-references/`. Add a new one when:
-
-- The rules cover one logical topic (Core Web Vitals, redirect patterns, schema validation, etc.)
-- Multiple skills will use the same rules
-- The rules are factual and prescriptive, not interpretive
-
-If only one skill uses the rules, put them in that skill's local `references/` folder instead.
 
 ## Reporting Bugs
 
